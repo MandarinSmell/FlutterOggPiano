@@ -2,7 +2,7 @@ name: flutter_ogg_piano
 description: Put sound and adjust pitching with Android internal codes
 version: 1.0.0
 author: MandarinSmell
-homepage:
+homepage: https://github.com/MandarinSmell/FlutterOggPiano.git
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
