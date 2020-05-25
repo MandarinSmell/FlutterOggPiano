@@ -19,8 +19,9 @@ class FlutterOggPiano {
 
   /// Load sound file with specified [src] byte data and specified file [name] with custom [index] value.
   /// Don't overload file for same index or it won't load it. Or set [forceLoad] to true.
-  Future<String> load({@required ByteData src, @required String name, @required int index, bool forceLoad = false}) async {
-    File f = await writeToFile(src, name: name);
+  /// This method will generate temp file in device, so you can decide if you will replace file with [replace] bool.
+  Future<String> load({@required ByteData src, @required String name, @required int index, bool forceLoad = false, bool replace = false}) async {
+    File f = await writeToFile(src, name: name, replace: replace);
 
     final String result = await _channel.invokeMethod("load", {"path": f.path, "index" : index, "forceLoad" : forceLoad});
 

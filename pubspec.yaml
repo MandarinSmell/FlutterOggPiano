@@ -1,6 +1,6 @@
 name: flutter_ogg_piano
 description: Put ogg sound and adjust pitching with Android internal codes. You can put multiple ogg sound and play these sounds with specific note value whenever you want
-version: 1.0.2
+version: 1.0.3
 author: MandarinSmell
 homepage: https://github.com/MandarinSmell/FlutterOggPiano.git
 

@@ -9,7 +9,7 @@ Put sound and adjust pitching with Android internal codes in Flutter
 To implement this plugin in Flutter, add this line in dependencies section in pubspec.yaml
 
 ```yaml
-flutter_ogg_piano : ^1.0.2
+flutter_ogg_piano : ^1.0.3
 ```
 
 ### Example
@@ -36,15 +36,19 @@ assets:
   - assets/456.ogg
 ```
 
+When you load file, app will generate temporary sound file into device and won't be removed for usage later.
+To replace this file, you have to set replace parameter to true, or it will load old data.
 You can load sound file like this,
 
 ```dart
 //In somewhere of codes
 rootBundle.load("assets/123.ogg").then((ogg) {
   //If you want to overload already existing sounds...
-  fop.load(src: ogg, index: 1, forceLoad: true);
+  fop.load(src: ogg, name: "123.ogg", index: 1, forceLoad: true);
   //If you want to load it normally...
-  fop.load(src: ogg, index: 1);
+  fop.load(src: ogg, name: "123.ogg", index: 1);
+  //If you want to replace generated temp file...
+  fop.load(src: ogg, name: "123.ogg", index: 1, forceLoad: true, replace: true);
 });
 
 rootBundle.load("assets/456.ogg").then((ogg) {

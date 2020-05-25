@@ -16,6 +16,16 @@ Future<File> writeToFile(ByteData data,
     name = name + ".ogg";
   }
 
+  Directory g = Directory("${d.path}/temp/");
+
+  bool ge = await g.exists();
+
+  if(!ge) {
+    await g.create().then((d) {
+      print("Directory created : "+d.path);
+    });
+  }
+
   final p = "${d.path}/temp/$name";
 
   File f = File(p);
