@@ -50,6 +50,8 @@ class FlutterOggPiano {
 
   /// Check if sound system is released
   Future<bool> isReleased() async {
-    await _channel.invokeMethod("isReleased");
+    bool isr = await _channel.invokeMethod("isReleased");
+
+    return isr;
   }
 }

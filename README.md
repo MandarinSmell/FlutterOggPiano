@@ -9,7 +9,7 @@ Put sound and adjust pitching with Android internal codes in Flutter
 To implement this plugin in Flutter, add this line in dependencies section in pubspec.yaml
 
 ```yaml
-flutter_ogg_piano : ^1.0.0
+flutter_ogg_piano : ^1.0.1
 ```
 
 ### Example
