@@ -22,7 +22,7 @@ class FlutterOggPiano {
   Future<String> load({@required ByteData src, @required String name, @required int index, bool forceLoad = false}) async {
     File f = await writeToFile(src, name: name);
 
-    final String result = await _channel.invokeMethod("loadSound", {"path": f.path, "index" : index, "forceLoad" : forceLoad});
+    final String result = await _channel.invokeMethod("load", {"path": f.path, "index" : index, "forceLoad" : forceLoad});
 
     print("Result : $result");
 
@@ -33,13 +33,13 @@ class FlutterOggPiano {
   /// 1 value difference for [note] is semitone<br>
   /// Negative [note] value for lower sound, positive for higher sound
   Future<void> play({@required int index, @required int note}) async {
-    await _channel.invokeMethod("playSound", {"index" : index, "note" : note});
+    await _channel.invokeMethod("play", {"index" : index, "note" : note});
   }
 
   /// Initialize sound system with [max] number of sounds which can be played.
   /// Default maximum number of sounds is 128.
   Future<void> init({int max = 128}) async {
-    await _channel.invokeMethod("initialize", {"max" : max});
+    await _channel.invokeMethod("init", {"max" : max});
   }
 
   /// Release sound system. After releasing it, you can't do anything with this sound system.
