@@ -49,10 +49,14 @@ public class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
                 }
 
                 released = false
+
+                result.success("Succeeded to initialize SoundPool")
             }
             "load" -> {
                 if(released) {
                     print("Warning : SoundPool is already released! Re-initializing is required")
+                    result.error("FOP_LOAD_ERROR", "SoundPool is already released! Re-initializing is required", "")
+
                     return
                 }
 
@@ -63,6 +67,7 @@ public class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
                 if (ids[index] != null) {
                     if(!force) {
                         print("Warning : ID already exists for this index. Try to allow forceLoad?")
+                        result.error("FOP_LOAD_ERROR", "ID already exists for this index. Try to allow forceLoad?", "")
                         return
                     }
                 }
@@ -76,6 +81,7 @@ public class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
             "play" -> {
                 if(released) {
                     print("Warning : SoundPool is already released! Re-initializing is required")
+                    result.error("FOP_PLAY_ERROR", "SoundPool is already released! Re-initializing is required", "")
                     return
                 }
 
@@ -88,13 +94,17 @@ public class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
 
                 if (id == null) {
                     println("Warning : No such $index index found")
+                    result.error("FOP_PLAY_ERROR", "No such $index index found", "")
                     return
                 }
 
                 pool.play(id, 1f, 1f, 0, 0, rate)
+
+                result.success("Succeeded to play index $index with pitch $note")
             }
             "release" -> {
                 pool.release()
+                result.success("Succeeded to release soundpool")
             }
             "isReleased" -> {
                 result.success(released)
