@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4091862e-d3b3-4cdf-b654-04a8b25e46c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/mandarin/flutter_ogg_piano/FlutterOggPianoPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/mandarin/flutter_ogg_piano/FlutterOggPianoPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_ogg_piano.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_ogg_piano.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590425961821</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix awaiting stuck">
+      <created>1592384496922</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592384496922</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -82,17 +93,18 @@
     <MESSAGE value="fix bug" />
     <MESSAGE value="match methods" />
     <MESSAGE value="add replace" />
-    <option name="LAST_COMMIT_MESSAGE" value="add replace" />
+    <MESSAGE value="fix awaiting stuck" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix awaiting stuck" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="578" y="114" key="CommitChangelistDialog2" timestamp="1590425961237">
+    <state x="578" y="114" key="CommitChangelistDialog2" timestamp="1592384495425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="578" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590425961237" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1590426032611">
+    <state x="578" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592384495425" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592449502226">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590426032611" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592449502226" />
     <state width="1877" height="239" key="GridCell.Tab.0.bottom" timestamp="1590425288967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -109,9 +121,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="239" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590425288966" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1590425962992">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592384498403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590425962992" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592384498403" />
   </component>
 </project>

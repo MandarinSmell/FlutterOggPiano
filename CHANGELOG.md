@@ -1,3 +1,7 @@
+## 1.0.5
+
+* Added left/right volume adjusting feature
+
 ## 1.0.4
 
 * Fixed awaiting stuck problem

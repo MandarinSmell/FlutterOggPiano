@@ -85,8 +85,33 @@ public class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
                     return
                 }
 
-                val index = call.argument<Int>("index") ?: return
-                val note = call.argument<Int>("note") ?: return
+                val index = call.argument<Int>("index")
+
+                if(index == null) {
+                    result.error("FOP_PLAY_ERROR","Index isn't specified","")
+                    return
+                }
+
+                val note = call.argument<Int>("note")
+
+                if(note == null) {
+                    result.error("FOP_PLAY_ERROR","Note isn't specified","")
+                    return
+                }
+
+                val left = call.argument<Double>("left")
+
+                if(left == null) {
+                    result.error("FOP_PLAY_ERROR","Left volume isn't specified", "")
+                    return
+                }
+
+                val right = call.argument<Double>("right")
+
+                if(right == null) {
+                    result.error("FOP_PLAY_ERROR", "Right volume isn't specified", "")
+                    return
+                }
 
                 val rate = 1.0f * 2.0.pow((1.0 * note.toFloat()) / 12.0).toFloat()
 
@@ -98,7 +123,7 @@ public class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
                     return
                 }
 
-                pool.play(id, 1f, 1f, 0, 0, rate)
+                pool.play(id, left.toFloat(), right.toFloat(), 0, 0, rate)
 
                 result.success("Succeeded to play index $index with pitch $note")
             }

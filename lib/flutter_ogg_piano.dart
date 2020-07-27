@@ -33,8 +33,8 @@ class FlutterOggPiano {
   /// Play sound with specified [index] to choose instrument and [note] to pick note<br>
   /// 1 value difference for [note] is semitone<br>
   /// Negative [note] value for lower sound, positive for higher sound
-  Future<void> play({@required int index, @required int note}) async {
-    await _channel.invokeMethod("play", {"index" : index, "note" : note});
+  Future<void> play({@required int index, @required int note, double left = 1.0, double right = 1.0}) async {
+    await _channel.invokeMethod("play", {"index" : index, "note" : note, "left" : left, "right" : right});
   }
 
   /// Initialize sound system with [max] number of sounds which can be played.

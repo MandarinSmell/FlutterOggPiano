@@ -69,6 +69,14 @@ fop.play(index: 1, note: -1) // 1 lower semitone with 123.ogg sound
 fop.play(index: 0, note: 3) //3 higher semitones with 456.ogg sound
 ```
 
+Since version 1.0.5, playing supports separated left/right volume
+If left/right isn't specified, default value is 1.0
+
+```dart
+//Somewhere of codes...
+fop.play(index: 1, note: -1, left: 0.5, right: 0.75)
+```
+
 Don't forget to release it after using this class
 
 ```dart
