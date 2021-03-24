@@ -77,6 +77,30 @@ If left/right isn't specified, default value is 1.0
 fop.play(index: 1, note: -1, left: 0.5, right: 0.75)
 ```
 
+Since version 1.0.6, you can now send multiple sound data which will be played
+But this has some restriction, you have to pass Map<int, double[]>
+Each key will be ID, and double[] contains [pitch, left_volume, right_volume]
+
+```dart
+Map<int, List<Float64List>> map = Map();
+
+List<Float64List> sounds = [];
+
+for(int i = 0; i < _number; i++) {
+  Float64List list = Float64List(3);
+
+  list[0] = _pitch;
+  list[1] = _left;
+  list[2] = _right;
+  
+  sounds.add(list);
+}
+
+map[id] = sounds;
+
+fop.playInGroup(map);
+```
+
 Don't forget to release it after using this class
 
 ```dart

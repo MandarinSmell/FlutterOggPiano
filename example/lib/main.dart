@@ -1,7 +1,11 @@
+import 'dart:math';
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_ogg_piano/flutter_ogg_piano.dart';
 
 void main() {
@@ -15,11 +19,23 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
+  FlutterOggPiano fop = FlutterOggPiano();
+
+  List<String> files = ["piano.ogg", "piano2.ogg"];
+
+  bool initialized = false;
+
+  int _count = 1;
+  int _pitch = 0;
 
   @override
   void initState() {
     super.initState();
     initPlatformState();
+
+    if(!initialized) {
+      loadPianoSounds();
+    }
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
@@ -50,9 +66,265 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(onPressed: () {
+                      if(initialized) {
+                        fop.play(index: 0, note: 0);
+                      }
+                    }, child: Text("Play Sound 1")
+                  ),
+                  ElevatedButton(onPressed: () {
+                      if(initialized) {
+                        fop.play(index: 1, note: 0);
+                      }
+                  }, child: Text("Play Sound 2"),)
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Center(child: Text("Pitch"),),
+                      Row(
+                        children: [
+                          Ink(
+                            decoration: ShapeDecoration(
+                              color: Colors.lightBlue,
+                              shape: CircleBorder(),
+                            ),
+                            child: IconButton(
+                              splashRadius: 24,
+                              splashColor: Colors.lightBlueAccent,
+                              onPressed: () {
+                                setState(() {
+                                  _pitch++;
+                                });
+                              },
+                              icon: Icon(Icons.arrow_upward, color: Colors.white70,),
+                            ),
+                          ),
+                          Padding(padding: EdgeInsets.fromLTRB(6, 0, 6, 0)),
+                          Container(
+                            width: 72,
+                            height: 36,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                color: Colors.grey[100],
+                                boxShadow: [
+                                  BoxShadow(
+                                      offset: Offset(4,4),
+                                      blurRadius: 4,
+                                      color: Colors.grey[600]
+                                  )
+                                ]
+                            ),
+                            child: Center(
+                              child: Text(_pitch.toString()),
+                            ),
+                          ),
+                          Padding(padding: EdgeInsets.fromLTRB(6, 0, 6, 0)),
+                          Ink(
+                            decoration: ShapeDecoration(
+                              color: Colors.lightBlue,
+                              shape: CircleBorder(),
+                            ),
+                            child: IconButton(
+                              splashRadius: 24,
+                              splashColor: Colors.lightBlueAccent,
+                              onPressed: () {
+                                setState(() {
+                                  _pitch--;
+                                });
+                              },
+                              icon: Icon(Icons.arrow_downward, color: Colors.white70,),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      ElevatedButton(onPressed: () {
+                        if(initialized) {
+                          fop.play(index: 0, note: _pitch);
+                        }
+                      }, child: Text("Play Sound 1")),
+                      ElevatedButton(onPressed: () {
+                        fop.play(index: 1, note: _pitch);
+                      }, child: Text("Play Sound 2")),
+                    ],
+                  )
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Ink(
+                    decoration: ShapeDecoration(
+                      color: Colors.lightBlue,
+                      shape: CircleBorder(),
+                    ),
+                    child: IconButton(
+                      splashRadius: 24,
+                      splashColor: Colors.lightBlueAccent,
+                      onPressed: () {
+                        setState(() {
+                          _count++;
+                        });
+                      },
+                      icon: Icon(Icons.arrow_upward, color: Colors.white70,),
+                    ),
+                  ),
+                  Container(
+                    width: 72,
+                    height: 36,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color: Colors.grey[100],
+                      boxShadow: [
+                        BoxShadow(
+                            offset: Offset(4,4),
+                          blurRadius: 4,
+                          color: Colors.grey[600]
+                        )
+                      ]
+                    ),
+                    child: Center(
+                      child: Text(_count.toString()),
+                    ),
+                  ),
+                  Ink(
+                    decoration: ShapeDecoration(
+                      color: Colors.lightBlue,
+                      shape: CircleBorder(),
+                    ),
+                    child: IconButton(
+                      splashRadius: 24,
+                      splashColor: Colors.lightBlueAccent,
+                      onPressed: () {
+                        setState(() {
+                          _count = max(--_count, 1);
+                        });
+                      },
+                      icon: Icon(Icons.arrow_downward, color: Colors.white70,),
+                    ),
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      ElevatedButton(onPressed: () {
+                        if(initialized) {
+                          Map<int, List<Float64List>> maps = Map();
+
+                          List<Float64List> sounds = [];
+
+                          for(int i = 0; i < _count; i++) {
+                            Float64List data = Float64List(3);
+
+                            data[0] = 0;
+                            data[1] = 1.0;
+                            data[2] = 1.0;
+
+                            sounds.add(data);
+                          }
+
+                          maps[0] = sounds;
+
+                          fop.playInGroup(maps);
+                        }
+                      }, child: Text("Play Sound 1 $_count time${_count == 1 ? "" : "s"}")),
+                      ElevatedButton(onPressed: () {
+                        if(initialized) {
+                          Map<int, List<Float64List>> maps = Map();
+
+                          List<Float64List> sounds = [];
+
+                          for(int i = 0; i < _count; i++) {
+                            Float64List data = Float64List(3);
+
+                            data[0] = 0;
+                            data[1] = 1.0;
+                            data[2] = 1.0;
+
+                            sounds.add(data);
+                          }
+
+                          maps[1] = sounds;
+
+                          fop.playInGroup(maps);
+                        }
+                      }, child: Text("Play Sound 2 $_count time${_count == 1 ? "" : "s"}")),
+                      ElevatedButton(onPressed: () {
+                        if(initialized) {
+                          Map<int, List<Float64List>> maps = Map();
+
+                          List<Float64List> sounds = [];
+
+                          for(int i = 0; i < _count; i++) {
+                            Float64List data = Float64List(3);
+
+                            data[0] = 0;
+                            data[1] = 1.0;
+                            data[2] = 1.0;
+
+                            sounds.add(data);
+                          }
+
+                          maps[1] = sounds;
+                          maps[0] = sounds;
+
+                          fop.playInGroup(maps);
+                        }
+                      }, child: Text("Play Both $_count time${_count == 1 ? "" : "s"}"))
+                    ],
+                  )
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(onPressed: () {
+                    if(initialized) {
+                      fop.play(index: 0, note: 0, right: 0);
+                    }
+                  }, child: Text("Play Sound 1 in left")),
+                  ElevatedButton(onPressed: () {
+                    if(initialized) {
+                      fop.play(index: 0, note: 0, left: 0);
+                    }
+                  }, child: Text("Play Sound 1 in right"))
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
+  }
+
+  Future<void> loadPianoSounds() async {
+    if(fop == null)
+      return null;
+
+    fop.init();
+
+    for(int i = 0; i < files.length; i++) {
+      String name = "assets/"+files[i];
+
+      ByteData data = await rootBundle.load(name);
+
+      await fop.load(src: data, name: files[i], index: i, forceLoad: true);
+    }
+
+    initialized = true;
   }
 }

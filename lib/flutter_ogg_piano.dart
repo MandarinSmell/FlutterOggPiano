@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
@@ -54,5 +55,12 @@ class FlutterOggPiano {
     bool isr = await _channel.invokeMethod("isReleased");
 
     return isr;
+  }
+
+  /// Plays multiple sounds at the same time, this method is for reducing delays in each sounds
+  /// [data] must contain 3 length integer list. Each value in list represents {note, left_volume, right_volume}
+  /// Keys in [data] must contain id of each sound.
+  Future<void> playInGroup(Map<int, List<Float64List>> data) async {
+    await _channel.invokeMethod("playInGroup", {"data" : data});
   }
 }

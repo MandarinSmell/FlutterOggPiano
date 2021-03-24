@@ -3,7 +3,8 @@ package com.mandarin.flutter_ogg_piano
 import android.media.AudioManager
 import android.media.SoundPool
 import android.os.Build
-import androidx.annotation.NonNull;
+import android.util.Log
+import androidx.annotation.NonNull
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
@@ -11,10 +12,11 @@ import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry.Registrar
+import java.lang.StringBuilder
 import kotlin.math.pow
 
 /** FlutterOggPianoPlugin */
-public class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
+class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
     private lateinit var channel: MethodChannel
     private lateinit var pool: SoundPool
 
@@ -22,7 +24,7 @@ public class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
     private var released = false
 
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-        channel = MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "flutter_ogg_piano")
+        channel = MethodChannel(flutterPluginBinding.binaryMessenger, "flutter_ogg_piano")
         channel.setMethodCallHandler(this);
     }
 
@@ -99,18 +101,34 @@ public class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
                     return
                 }
 
-                val left = call.argument<Double>("left")
+                var left = call.argument<Double>("left")
 
                 if(left == null) {
                     result.error("FOP_PLAY_ERROR","Left volume isn't specified", "")
                     return
+                } else if(left < 0 || left > 1.0) {
+                    Log.w("FOP_PLAY_WARNING", "Left volume is out of range! Readjusting left volume")
+
+                    if(left < 0)
+                        left = 0.0
+
+                    if(left > 1.0)
+                        left = 1.0
                 }
 
-                val right = call.argument<Double>("right")
+                var right = call.argument<Double>("right")
 
                 if(right == null) {
                     result.error("FOP_PLAY_ERROR", "Right volume isn't specified", "")
                     return
+                } else if(right < 0 || right > 1.0) {
+                    Log.w("FOP_PLAY_WARNING", "right volume is out of range! Readjusting right volume")
+
+                    if(right < 0)
+                        right = 0.0
+
+                    if(right > 1.0)
+                        right = 1.0
                 }
 
                 val rate = 1.0f * 2.0.pow((1.0 * note.toFloat()) / 12.0).toFloat()
@@ -127,6 +145,66 @@ public class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
 
                 result.success("Succeeded to play index $index with pitch $note")
             }
+            "playInGroup" -> {
+                val data = call.argument<Map<Int, List<DoubleArray>>>("data")
+
+                if(data == null) {
+                    result.error("FOP_PLAY_GROUP_ERROR", "Data isn't specified", "")
+                    return
+                }
+
+                for(n in data.values) {
+                    for(s in n) {
+                        if(s.size != 3) {
+                            result.error("FOP_PLAY_GROUP_ERROR", "Data has invalid format. Data : ${printMap(data)}", "")
+                            return
+                        }
+                    }
+                }
+
+                for(n in data.keys) {
+                    val sound = data[n] ?: continue
+
+                    val id = ids[n]
+
+                    if(id == null) {
+                        Log.w("FOP_PLAY_GROUP_WARNING", "ID index $n isn't found, continuing playing sounds...")
+                        continue
+                    }
+
+                    for(note in sound) {
+                        val rate = 1.0f * 2.0.pow((1.0 * note[0].toFloat()) / 12.0).toFloat()
+
+                        var right = note[2]
+
+                        if(right < 0 || right > 1.0) {
+                            Log.w("FOP_PLAY_WARNING", "right volume is out of range! Readjusting right volume")
+
+                            if(right < 0)
+                                right = 0.0
+
+                            if(right > 1.0)
+                                right = 1.0
+                        }
+
+                        var left= note[1]
+
+                        if(left < 0 || left > 1.0) {
+                            Log.w("FOP_PLAY_GROUP_WARNING", "Left volume is out of range! Readjusting left volume")
+
+                            if(left < 0)
+                                left = 0.0
+
+                            if(left > 1.0)
+                                left = 1.0
+                        }
+
+                        pool.play(id, left.toFloat(), right.toFloat(), 0, 0, rate)
+                    }
+                }
+
+                result.success("Succeeded to play multiple sounds")
+            }
             "release" -> {
                 pool.release()
                 result.success("Succeeded to release soundpool")
@@ -142,5 +220,47 @@ public class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
 
     override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
         channel.setMethodCallHandler(null)
+    }
+
+    private fun printMap(map: Map<Int, List<DoubleArray>>) : String {
+        val builder = StringBuilder("{")
+
+        for(key in map.keys) {
+            builder.append(" $key : ")
+
+            val array = map[key]
+
+            if(array == null){
+                builder.append("null,")
+            } else {
+                builder.append("[")
+
+                for(j in array.indices) {
+                    val arr = array[j]
+
+                    builder.append("(")
+
+                    for(i in arr.indices) {
+                        builder.append(arr[i])
+
+                        if(i < arr.size - 1) {
+                            builder.append(", ")
+                        }
+                    }
+
+                    builder.append(")")
+
+                    if(j < array.size - 1) {
+                        builder.append(", ")
+                    }
+                }
+
+                builder.append("],")
+            }
+        }
+
+        builder.append("}")
+
+        return builder.toString()
     }
 }

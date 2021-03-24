@@ -1,3 +1,7 @@
+## 1.0.6
+
+* Performed playing multiple sound in group (In one method)
+
 ## 1.0.5
 
 * Added left/right volume adjusting feature
