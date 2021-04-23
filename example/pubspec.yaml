@@ -6,7 +6,7 @@ description: Demonstrates how to use the flutter_ogg_piano plugin.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -47,6 +47,8 @@ flutter:
   assets:
     - assets/piano.ogg
     - assets/piano2.ogg
+    - assets/sine.wav
+    - assets/flute.ogg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

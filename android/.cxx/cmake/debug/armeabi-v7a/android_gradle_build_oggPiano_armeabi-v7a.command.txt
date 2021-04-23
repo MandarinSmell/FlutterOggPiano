@@ -1,0 +1,7 @@
+Executable : C:\Users\user\AppData\Local\Android\sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+C:\Users\user\AndroidStudioProjects\flutter_ogg_piano\android\.cxx\cmake\debug\armeabi-v7a
+oggPiano
+jvmArgs : 
+

@@ -1,0 +1,29 @@
+{
+  "buildFiles": [
+    "C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\src\\main\\cpp\\CMakeLists.txt",
+    "C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\ndk\\22.1.7171670\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\ndk\\22.1.7171670\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\ndk\\22.1.7171670\\build\\cmake\\compiler_id.cmake",
+    "C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\src\\main\\cpp\\oboe\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\user\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\.cxx\\cmake\\profile\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\user\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\.cxx\\cmake\\profile\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "oggPiano-Release-x86": {
+      "artifactName": "oggPiano",
+      "buildCommand": "C:\\Users\\user\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\.cxx\\cmake\\profile\\x86\" oggPiano",
+      "abi": "x86",
+      "output": "C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\example\\build\\flutter_ogg_piano\\intermediates\\cmake\\profile\\obj\\x86\\liboggPiano.so",
+      "runtimeFiles": []
+    },
+    "oboe-Release-x86": {
+      "artifactName": "oboe",
+      "buildCommand": "C:\\Users\\user\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\.cxx\\cmake\\profile\\x86\" oboe",
+      "abi": "x86",
+      "output": "C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\.cxx\\cmake\\profile\\x86\\oboe\\liboboe.a",
+      "runtimeFiles": []
+    }
+  }
+}

@@ -1,31 +1,39 @@
 package com.mandarin.flutter_ogg_piano
 
-import android.media.AudioManager
-import android.media.SoundPool
+import android.media.MediaCodec
 import android.os.Build
 import android.util.Log
 import androidx.annotation.NonNull
-
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry.Registrar
-import java.lang.StringBuilder
+import java.nio.ByteBuffer
+import java.nio.ByteOrder
 import kotlin.math.pow
 
 /** FlutterOggPianoPlugin */
+@Suppress("DEPRECATION")
 class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
     private lateinit var channel: MethodChannel
-    private lateinit var pool: SoundPool
 
     private val ids = HashMap<Int, Int>()
     private var released = false
 
+    init {
+        System.loadLibrary("oggPiano")
+    }
+
+    private external fun addPlayer(data: FloatArray, isStereo: Boolean, sampleRate: Int) : Int
+    private external fun initializeEngine(isStereo: Boolean)
+    private external fun addQueue(id: Int, pan: Float, pitch: Float, playScale: Int)
+    private external fun release()
+
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
         channel = MethodChannel(flutterPluginBinding.binaryMessenger, "flutter_ogg_piano")
-        channel.setMethodCallHandler(this);
+        channel.setMethodCallHandler(this)
     }
 
     companion object {
@@ -42,17 +50,13 @@ class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
                 result.success("Android ${Build.VERSION.RELEASE}")
             }
             "init" -> {
-                val maximum = call.argument<Int>("maxSound") ?: 128
-
-                pool = if (Build.VERSION.SDK_INT >= 21) {
-                    SoundPool.Builder().setMaxStreams(maximum).build()
-                } else {
-                    SoundPool(100, AudioManager.STREAM_MUSIC, 0)
-                }
-
                 released = false
 
-                result.success("Succeeded to initialize SoundPool")
+                val isStereo = call.argument<Boolean>("isStereo") ?: true
+
+                initializeEngine(isStereo)
+
+                result.success("Succeeded to initialize OggEngine")
             }
             "load" -> {
                 if(released) {
@@ -74,15 +78,23 @@ class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
                     }
                 }
 
-                val id = pool.load(path, 0)
+                val reader = AudioReader(path)
 
-                ids[index] = id
+                if(reader.canDo) {
+                    val resArray = reader.getPCM(MediaCodec.BufferInfo()).toByteArray()
 
-                result.success("Succeeded to initialize sound, index is $index and id is $id")
+                    val id = addPlayer(toFloatArray(resArray), reader.isStereo, reader.sampleRate)
+
+                    ids[index] = id
+
+                    result.success("Succeeded to initialize sound, index is $index and id is $id")
+                } else {
+                    result.error("FOP_SOUND_INIT_FAILURE", "Failed to initialize sound", null)
+                }
             }
             "play" -> {
                 if(released) {
-                    print("Warning : SoundPool is already released! Re-initializing is required")
+                    print("Warning : OggEngine is already released! Re-initializing is required")
                     result.error("FOP_PLAY_ERROR", "SoundPool is already released! Re-initializing is required", "")
                     return
                 }
@@ -101,34 +113,19 @@ class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
                     return
                 }
 
-                var left = call.argument<Double>("left")
+                var pan = call.argument<Double>("pan")
 
-                if(left == null) {
-                    result.error("FOP_PLAY_ERROR","Left volume isn't specified", "")
+                if(pan == null) {
+                    result.error("FOP_PLAY_ERROR","pan isn't specified", "")
                     return
-                } else if(left < 0 || left > 1.0) {
-                    Log.w("FOP_PLAY_WARNING", "Left volume is out of range! Readjusting left volume")
+                } else if(pan < -1.0 || pan > 1.0) {
+                    Log.w("FOP_PLAY_WARNING", "pan is out of range! Readjusting pan")
 
-                    if(left < 0)
-                        left = 0.0
+                    if(pan < -1.0)
+                        pan = -1.0
 
-                    if(left > 1.0)
-                        left = 1.0
-                }
-
-                var right = call.argument<Double>("right")
-
-                if(right == null) {
-                    result.error("FOP_PLAY_ERROR", "Right volume isn't specified", "")
-                    return
-                } else if(right < 0 || right > 1.0) {
-                    Log.w("FOP_PLAY_WARNING", "right volume is out of range! Readjusting right volume")
-
-                    if(right < 0)
-                        right = 0.0
-
-                    if(right > 1.0)
-                        right = 1.0
+                    if(pan > 1.0)
+                        pan = 1.0
                 }
 
                 val rate = 1.0f * 2.0.pow((1.0 * note.toFloat()) / 12.0).toFloat()
@@ -141,7 +138,7 @@ class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
                     return
                 }
 
-                pool.play(id, left.toFloat(), right.toFloat(), 0, 0, rate)
+                addQueue(id, pan.toFloat(), rate, 1)
 
                 result.success("Succeeded to play index $index with pitch $note")
             }
@@ -175,38 +172,26 @@ class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
                     for(note in sound) {
                         val rate = 1.0f * 2.0.pow((1.0 * note[0].toFloat()) / 12.0).toFloat()
 
-                        var right = note[2]
+                        var pan = note[1]
 
-                        if(right < 0 || right > 1.0) {
-                            Log.w("FOP_PLAY_WARNING", "right volume is out of range! Readjusting right volume")
+                        if(pan < -1.0 || pan > 1.0) {
+                            Log.w("FOP_PLAY_GROUP_WARNING", "pan is out of range! Readjusting pan")
 
-                            if(right < 0)
-                                right = 0.0
+                            if(pan < -1.0)
+                                pan = -1.0
 
-                            if(right > 1.0)
-                                right = 1.0
+                            if(pan > 1.0)
+                                pan = 1.0
                         }
 
-                        var left= note[1]
-
-                        if(left < 0 || left > 1.0) {
-                            Log.w("FOP_PLAY_GROUP_WARNING", "Left volume is out of range! Readjusting left volume")
-
-                            if(left < 0)
-                                left = 0.0
-
-                            if(left > 1.0)
-                                left = 1.0
-                        }
-
-                        pool.play(id, left.toFloat(), right.toFloat(), 0, 0, rate)
+                        addQueue(id, pan.toFloat(), rate, note[2].toInt())
                     }
                 }
 
                 result.success("Succeeded to play multiple sounds")
             }
             "release" -> {
-                pool.release()
+                release()
                 result.success("Succeeded to release soundpool")
             }
             "isReleased" -> {
@@ -262,5 +247,21 @@ class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
         builder.append("}")
 
         return builder.toString()
+    }
+
+    private fun toFloatArray(bytes: ByteArray) : FloatArray {
+        val shorts = ShortArray(bytes.size / 2)
+
+        ByteBuffer.wrap(bytes).order(ByteOrder.LITTLE_ENDIAN).asShortBuffer().get(shorts)
+
+        println("SHORTS : ${shorts.contentToString()}")
+
+        val result = FloatArray(shorts.size)
+
+        for(i in shorts.indices) {
+            result[i] = shorts[i] * 2.0f / 65535
+        }
+
+        return result
     }
 }

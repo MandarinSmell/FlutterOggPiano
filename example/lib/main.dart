@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
   FlutterOggPiano fop = FlutterOggPiano();
 
-  List<String> files = ["piano.ogg", "piano2.ogg"];
+  List<String> files = ["flute.ogg", "piano.ogg"];
 
   bool initialized = false;
 
@@ -43,7 +43,7 @@ class _MyAppState extends State<MyApp> {
     String platformVersion;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      platformVersion = await FlutterOggPiano.platformVersion;
+      platformVersion = (await FlutterOggPiano.platformVersion) ?? _platformVersion;
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
@@ -121,7 +121,7 @@ class _MyAppState extends State<MyApp> {
                                   BoxShadow(
                                       offset: Offset(4,4),
                                       blurRadius: 4,
-                                      color: Colors.grey[600]
+                                      color: Colors.grey[600]!
                                   )
                                 ]
                             ),
@@ -194,7 +194,7 @@ class _MyAppState extends State<MyApp> {
                         BoxShadow(
                             offset: Offset(4,4),
                           blurRadius: 4,
-                          color: Colors.grey[600]
+                          color: Colors.grey[600]!
                         )
                       ]
                     ),
@@ -227,15 +227,13 @@ class _MyAppState extends State<MyApp> {
 
                           List<Float64List> sounds = [];
 
-                          for(int i = 0; i < _count; i++) {
-                            Float64List data = Float64List(3);
+                          Float64List data = Float64List(3);
 
-                            data[0] = 0;
-                            data[1] = 1.0;
-                            data[2] = 1.0;
+                          data[0] = 0;
+                          data[1] = 0;
+                          data[2] = _count.toDouble();
 
-                            sounds.add(data);
-                          }
+                          sounds.add(data);
 
                           maps[0] = sounds;
 
@@ -248,15 +246,13 @@ class _MyAppState extends State<MyApp> {
 
                           List<Float64List> sounds = [];
 
-                          for(int i = 0; i < _count; i++) {
-                            Float64List data = Float64List(3);
+                          Float64List data = Float64List(3);
 
-                            data[0] = 0;
-                            data[1] = 1.0;
-                            data[2] = 1.0;
+                          data[0] = 0;
+                          data[1] = 0;
+                          data[2] = _count.toDouble();
 
-                            sounds.add(data);
-                          }
+                          sounds.add(data);
 
                           maps[1] = sounds;
 
@@ -269,15 +265,13 @@ class _MyAppState extends State<MyApp> {
 
                           List<Float64List> sounds = [];
 
-                          for(int i = 0; i < _count; i++) {
-                            Float64List data = Float64List(3);
+                          Float64List data = Float64List(3);
 
-                            data[0] = 0;
-                            data[1] = 1.0;
-                            data[2] = 1.0;
+                          data[0] = 0;
+                          data[1] = 0;
+                          data[2] = _count.toDouble();
 
-                            sounds.add(data);
-                          }
+                          sounds.add(data);
 
                           maps[1] = sounds;
                           maps[0] = sounds;
@@ -294,12 +288,12 @@ class _MyAppState extends State<MyApp> {
                 children: [
                   ElevatedButton(onPressed: () {
                     if(initialized) {
-                      fop.play(index: 0, note: 0, right: 0);
+                      fop.play(index: 0, note: 0, pan: -1.0);
                     }
                   }, child: Text("Play Sound 1 in left")),
                   ElevatedButton(onPressed: () {
                     if(initialized) {
-                      fop.play(index: 0, note: 0, left: 0);
+                      fop.play(index: 0, note: 0, pan: 1.0);
                     }
                   }, child: Text("Play Sound 1 in right"))
                 ],
@@ -312,9 +306,6 @@ class _MyAppState extends State<MyApp> {
   }
 
   Future<void> loadPianoSounds() async {
-    if(fop == null)
-      return null;
-
     fop.init();
 
     for(int i = 0; i < files.length; i++) {

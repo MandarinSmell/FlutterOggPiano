@@ -1,0 +1,14 @@
+C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/install/strip.dir
+C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/oggPiano.dir
+C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/install/local.dir
+C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/install.dir
+C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/list_install_components.dir
+C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir
+C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/install/local.dir
+C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/install.dir
+C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/edit_cache.dir
+C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/rebuild_cache.dir
+C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/list_install_components.dir
+C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/install/strip.dir

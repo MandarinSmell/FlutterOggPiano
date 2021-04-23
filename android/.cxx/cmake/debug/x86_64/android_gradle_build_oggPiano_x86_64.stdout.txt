@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\user\AndroidStudioProjects\flutter_ogg_piano\android\.cxx\cmake\debug\x86_64'
+ninja: no work to do.
