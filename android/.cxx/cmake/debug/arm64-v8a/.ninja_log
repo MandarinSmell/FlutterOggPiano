@@ -105,3 +105,5 @@
 37	1029	640867033	CMakeFiles/oggPiano.dir/OggPiano.cpp.o	9380495130922e63
 15	1071	640867033	CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o	345f93357605cf21
 1072	1349	640867034	C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/example/build/flutter_ogg_piano/intermediates/cmake/debug/obj/arm64-v8a/liboggPiano.so	92da74e10d5c5b50
+6	906	640868055	CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o	345f93357605cf21
+906	1230	640868055	C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/example/build/flutter_ogg_piano/intermediates/cmake/debug/obj/arm64-v8a/liboggPiano.so	92da74e10d5c5b50

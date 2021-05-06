@@ -254,8 +254,6 @@ class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
 
         ByteBuffer.wrap(bytes).order(ByteOrder.LITTLE_ENDIAN).asShortBuffer().get(shorts)
 
-        println("SHORTS : ${shorts.contentToString()}")
-
         val result = FloatArray(shorts.size)
 
         for(i in shorts.indices) {
