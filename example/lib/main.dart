@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
   FlutterOggPiano fop = FlutterOggPiano();
 
-  List<String> files = ["flute.ogg", "piano.ogg"];
+  List<String> files = ["piano.ogg", "piano2.ogg"];
 
   bool initialized = false;
 
