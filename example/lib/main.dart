@@ -306,7 +306,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   Future<void> loadPianoSounds() async {
-    fop.init();
+    fop.init(mode: MODE.POWER_SAVING);
 
     for(int i = 0; i < files.length; i++) {
       String name = "assets/"+files[i];

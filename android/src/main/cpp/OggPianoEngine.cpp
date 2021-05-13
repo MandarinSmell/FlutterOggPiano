@@ -10,21 +10,21 @@
 #include "OggPlayer.h"
 
 void OggPianoEngine::initialize() {
-    players = new std::vector<OggPlayer>;
+    std::vector<OggPlayer>().swap(players);
 }
 
-void OggPianoEngine::start(bool isStereo) {
+void OggPianoEngine::start(bool isStereo, MODE mode) {
     AudioStreamBuilder builder;
 
     builder.setFormat(AudioFormat::Float);
     builder.setDirection(Direction::Output);
     builder.setChannelCount(isStereo ? ChannelCount::Stereo : ChannelCount::Mono);
-    builder.setPerformanceMode(PerformanceMode::LowLatency);
+    builder.setPerformanceMode(mode == LOW_LATENCY ? PerformanceMode::LowLatency : PerformanceMode::PowerSaving);
     builder.setSharingMode(SharingMode::Shared);
 
     builder.setCallback(this);
 
-    builder.openStream(&stream);
+    builder.openStream(stream);
 
     stream->setBufferSizeInFrames(stream->getFramesPerBurst() * 2);
 
@@ -34,39 +34,39 @@ void OggPianoEngine::start(bool isStereo) {
 
     isStreamOpened = true;
     isStreamStereo = isStereo;
+    selectedMode = mode;
 }
 
 void OggPianoEngine::release() {
     stream->flush();
     stream->close();
-    delete stream;
-    delete players;
+    stream.reset();
     isStreamOpened = false;
     deviceSampleRate = -1;
 }
 
 DataCallbackResult
 OggPianoEngine::onAudioReady(AudioStream *audioStream, void *audioData, int32_t numFrames) {
-    for(int i = 0; i < players->size(); i++) {
-        players->at(i).renderAudio(static_cast<float*>(audioData), numFrames, i == 0, audioStream->getChannelCount() != 1);
+    for(int i = 0; i < players.size(); i++) {
+        players.at(i).renderAudio(static_cast<float*>(audioData), numFrames, i == 0, audioStream->getChannelCount() != 1);
     }
 
     return DataCallbackResult::Continue;
 }
 
-int OggPianoEngine::addPlayer(std::vector<float> data, bool isStereo, int sampleRate) const {
+int OggPianoEngine::addPlayer(std::vector<float> data, bool isStereo, int sampleRate) {
     if(deviceSampleRate != -1) {
-        players->push_back(OggPlayer(std::move(data), isStereo, sampleRate, deviceSampleRate));
+        players.emplace_back(std::move(data), isStereo, sampleRate, deviceSampleRate);
     } else {
-        players->push_back(OggPlayer(std::move(data), isStereo, sampleRate, sampleRate));
+        players.emplace_back(std::move(data), isStereo, sampleRate, sampleRate);
     }
 
-    return static_cast<int>(players->size()) - 1;
+    return static_cast<int>(players.size()) - 1;
 }
 
-void OggPianoEngine::addQueue(int id, float pan, float pitch, int playerScale) const {
-    if(id >= 0 && id < players->size()) {
-        players->at(id).addQueue(pan, pitch, playerScale);
+void OggPianoEngine::addQueue(int id, float pan, float pitch, int playerScale) {
+    if(id >= 0 && id < players.size()) {
+        players.at(id).addQueue(pan, pitch, playerScale);
     }
 }
 
@@ -81,7 +81,7 @@ void OggPianoEngine::closeStream() {
         stream->stop();
         stream->flush();
 
-        delete stream;
+        stream.reset();
 
         isStreamOpened = false;
         deviceSampleRate = -1;
@@ -93,5 +93,5 @@ void OggPianoEngine::reopenStream() {
         closeStream();
     }
 
-    start(isStreamStereo);
+    start(isStreamStereo, selectedMode);
 }

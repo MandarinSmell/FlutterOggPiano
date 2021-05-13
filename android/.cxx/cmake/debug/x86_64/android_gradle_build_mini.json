@@ -1,26 +1,43 @@
 {
   "buildFiles": [
     "C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\src\\main\\cpp\\CMakeLists.txt",
-    "C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\ndk\\22.1.7171670\\build\\cmake\\android.toolchain.cmake",
-    "C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\ndk\\22.1.7171670\\build\\cmake\\platforms.cmake",
-    "C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\ndk\\22.1.7171670\\build\\cmake\\compiler_id.cmake",
     "C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\src\\main\\cpp\\oboe\\CMakeLists.txt"
   ],
-  "cleanCommands": [
-    "C:\\Users\\user\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\.cxx\\cmake\\debug\\x86_64\" clean"
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\user\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\.cxx\\cmake\\debug\\x86_64",
+      "clean"
+    ]
   ],
-  "buildTargetsCommand": "C:\\Users\\user\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\.cxx\\cmake\\debug\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\user\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\.cxx\\cmake\\debug\\x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
   "libraries": {
     "oggPiano-Debug-x86_64": {
       "artifactName": "oggPiano",
-      "buildCommand": "C:\\Users\\user\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\.cxx\\cmake\\debug\\x86_64\" oggPiano",
+      "buildCommandComponents": [
+        "C:\\Users\\user\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\.cxx\\cmake\\debug\\x86_64",
+        "oggPiano"
+      ],
       "abi": "x86_64",
       "output": "C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\example\\build\\flutter_ogg_piano\\intermediates\\cmake\\debug\\obj\\x86_64\\liboggPiano.so",
       "runtimeFiles": []
     },
     "oboe-Debug-x86_64": {
       "artifactName": "oboe",
-      "buildCommand": "C:\\Users\\user\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\.cxx\\cmake\\debug\\x86_64\" oboe",
+      "buildCommandComponents": [
+        "C:\\Users\\user\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\.cxx\\cmake\\debug\\x86_64",
+        "oboe"
+      ],
       "abi": "x86_64",
       "output": "C:\\Users\\user\\AndroidStudioProjects\\flutter_ogg_piano\\android\\.cxx\\cmake\\debug\\x86_64\\oboe\\liboboe.a",
       "runtimeFiles": []

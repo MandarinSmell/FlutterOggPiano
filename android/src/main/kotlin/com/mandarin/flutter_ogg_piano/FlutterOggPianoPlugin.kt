@@ -17,6 +17,7 @@ import kotlin.math.pow
 /** FlutterOggPianoPlugin */
 @Suppress("DEPRECATION")
 class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
+
     private lateinit var channel: MethodChannel
 
     private val ids = HashMap<Int, Int>()
@@ -27,7 +28,7 @@ class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
     }
 
     private external fun addPlayer(data: FloatArray, isStereo: Boolean, sampleRate: Int) : Int
-    private external fun initializeEngine(isStereo: Boolean)
+    private external fun initializeEngine(isStereo: Boolean, mode: Int)
     private external fun addQueue(id: Int, pan: Float, pitch: Float, playScale: Int)
     private external fun release()
 
@@ -53,8 +54,9 @@ class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
                 released = false
 
                 val isStereo = call.argument<Boolean>("isStereo") ?: true
+                val mode = call.argument<Int>("mode") ?: 0
 
-                initializeEngine(isStereo)
+                initializeEngine(isStereo, mode)
 
                 result.success("Succeeded to initialize OggEngine")
             }

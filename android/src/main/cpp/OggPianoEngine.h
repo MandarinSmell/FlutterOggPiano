@@ -10,12 +10,17 @@
 
 #include "OggPlayer.h"
 
+enum MODE {
+    LOW_LATENCY,
+    POWER_SAVING
+};
+
 using namespace oboe;
 
 class OggPianoEngine : public AudioStreamCallback {
 public:
     void initialize();
-    void start(bool isStereo);
+    void start(bool isStereo, MODE mode);
     void closeStream();
     void reopenStream();
     void release();
@@ -25,16 +30,18 @@ public:
 
     int deviceSampleRate = 0;
 
+    MODE selectedMode = LOW_LATENCY;
+
     DataCallbackResult
     onAudioReady(AudioStream *audioStream, void *audioData, int32_t numFrames) override;
     void onErrorAfterClose(AudioStream *audioStream, Result result) override ;
 
-    AudioStream* stream;
-    std::vector<OggPlayer>* players;
+    std::shared_ptr<AudioStream> stream;
+    std::vector<OggPlayer> players = std::vector<OggPlayer>();
 
-    int addPlayer(std::vector<float> data, bool isStereo, int sampleRate) const;
+    int addPlayer(std::vector<float> data, bool isStereo, int sampleRate);
 
-    void addQueue(int id, float pan, float pitch, int playerScale) const;
+    void addQueue(int id, float pan, float pitch, int playerScale);
 };
 
 

@@ -1,0 +1,2 @@
+C:\Users\user\AndroidStudioProjects\flutter_ogg_piano\android\src\main\cpp\CMakeLists.txt
+C:\Users\user\AndroidStudioProjects\flutter_ogg_piano\android\src\main\cpp\oboe\CMakeLists.txt

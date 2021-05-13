@@ -25,7 +25,7 @@ rule CUSTOM_COMMAND
 rule CXX_COMPILER__oggPiano
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\user\AppData\Local\Android\Sdk\ndk\22.1.7171670\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/user/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/user/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = C:\Users\user\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/user/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/user/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -33,7 +33,7 @@ rule CXX_COMPILER__oggPiano
 # Rule for linking CXX shared library.
 
 rule CXX_SHARED_LIBRARY_LINKER__oggPiano
-  command = cmd.exe /C "$PRE_LINK && C:\Users\user\AppData\Local\Android\Sdk\ndk\22.1.7171670\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/user/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/user/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && C:\Users\user\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/user/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/user/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
 
@@ -44,7 +44,7 @@ rule CXX_SHARED_LIBRARY_LINKER__oggPiano
 rule CXX_COMPILER__oboe
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\user\AppData\Local\Android\Sdk\ndk\22.1.7171670\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/user/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/user/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = C:\Users\user\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/user/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/user/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -52,7 +52,7 @@ rule CXX_COMPILER__oboe
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__oboe
-  command = cmd.exe /C "$PRE_LINK && C:\Users\user\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe -E remove $TARGET_FILE && C:\Users\user\AppData\Local\Android\Sdk\ndk\22.1.7171670\toolchains\llvm\prebuilt\windows-x86_64\bin\llvm-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\Users\user\AppData\Local\Android\Sdk\ndk\22.1.7171670\toolchains\llvm\prebuilt\windows-x86_64\bin\llvm-ranlib.exe $TARGET_FILE && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && C:\Users\user\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe -E remove $TARGET_FILE && C:\Users\user\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\aarch64-linux-android-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\Users\user\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\aarch64-linux-android-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 

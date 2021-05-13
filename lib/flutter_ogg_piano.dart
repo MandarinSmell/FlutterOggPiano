@@ -5,6 +5,11 @@ import 'dart:typed_data';
 import 'package:flutter/services.dart';
 import 'package:flutter_ogg_piano/tempFileExporter.dart';
 
+enum MODE {
+  LOW_LATENCY,
+  POWER_SAVING
+}
+
 class FlutterOggPiano {
   static const MethodChannel _channel =
       const MethodChannel('flutter_ogg_piano');
@@ -42,8 +47,10 @@ class FlutterOggPiano {
 
   /// Initialize sound system<br>
   /// You can enable mono mode by setting [isStereo] as false. [isStereo] is true as default
-  Future<void> init({bool isStereo = true}) async {
-    await _channel.invokeMethod("init", {"isStereo" : isStereo});
+  /// [mode] decides performance of audio handler. If [mode] is [LOW_LATENCY], it can render audio fast, but audio will start stutter if there are too many sounds to be rendered<br>
+  /// If [mode] is [POWER_SAVING], it can render audio more fluently, but it may require higher performance than [LOW_LATENCY] mode
+  Future<void> init({bool isStereo = true, MODE mode = MODE.LOW_LATENCY}) async {
+    await _channel.invokeMethod("init", {"isStereo" : isStereo, "mode" : mode == MODE.LOW_LATENCY ? 0 : 1});
   }
 
   /// Release sound system. After releasing it, you can't do anything with this sound system.
