@@ -60,3 +60,15 @@
 2908	4344	642607356	oboe/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o	a68ffa9a73e3eef9
 4345	5346	642607357	oboe/liboboe.a	b7934ea8e93219de
 5346	5622	642607357	C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/example/build/flutter_ogg_piano/intermediates/cmake/debug/obj/x86_64/liboggPiano.so	d2b82e96a77c5b9f
+8	636	643211977	CMakeFiles/oggPiano.dir/OggPlayer.cpp.o	7ecf9a7c1d9511b8
+16	1046	643211977	CMakeFiles/oggPiano.dir/OggPiano.cpp.o	aab9e4d8bb8ac70b
+25	1076	643211977	CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o	b2a017c8978dc606
+1077	1839	643211978	C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/example/build/flutter_ogg_piano/intermediates/cmake/debug/obj/x86_64/liboggPiano.so	d2b82e96a77c5b9f
+10	675	643213357	CMakeFiles/oggPiano.dir/OggPlayer.cpp.o	7ecf9a7c1d9511b8
+24	1234	643213357	CMakeFiles/oggPiano.dir/OggPiano.cpp.o	aab9e4d8bb8ac70b
+40	1314	643213357	CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o	b2a017c8978dc606
+1315	1629	643213358	C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/example/build/flutter_ogg_piano/intermediates/cmake/debug/obj/x86_64/liboggPiano.so	d2b82e96a77c5b9f
+37	1163	643215104	CMakeFiles/oggPiano.dir/OggPlayer.cpp.o	7ecf9a7c1d9511b8
+8	1543	643215104	CMakeFiles/oggPiano.dir/OggPiano.cpp.o	aab9e4d8bb8ac70b
+60	1607	643215104	CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o	b2a017c8978dc606
+1607	2055	643215104	C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/example/build/flutter_ogg_piano/intermediates/cmake/debug/obj/x86_64/liboggPiano.so	d2b82e96a77c5b9f

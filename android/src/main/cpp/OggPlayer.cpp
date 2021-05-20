@@ -22,41 +22,24 @@ void OggPlayer::renderAudio(float *audioData, int32_t numFrames, bool reset, boo
 }
 
 void OggPlayer::smoothAudio(float *audioData, int32_t numFrames, bool isStreamStereo) {
-    float maxSample = 0;
-
     for(int i = 0; i < numFrames; i++) {
         if(isStreamStereo) {
-            maxSample = fmax(abs(audioData[i * 2]), maxSample);
-            maxSample = fmax(abs(audioData[i * 2 + 1]), maxSample);
+            if(audioData[i * 2] > 1.0)
+                audioData[i * 2] = 1.0;
+            else if(audioData[i * 2] < -1.0)
+                audioData[i * 2] = -1.0;
+
+            if(audioData[i * 2 + 1] > 1.0)
+                audioData[i * 2 + 1] = 1.0;
+            else if(audioData[i * 2 + 1] < -1.0)
+                audioData[i * 2 + 1] = -1.0;
         } else {
-            maxSample = fmax(abs(audioData[i]), maxSample);
+            if(audioData[i] > 1.0)
+                audioData[i] = 1.0;
+            else if(audioData[i] < -1.0)
+                audioData[i] = -1.0;
         }
     }
-
-    if(maxSample > 1.0)
-        for(int i = 0; i < numFrames; i++) {
-            if(isStreamStereo) {
-                audioData[i * 2] *= MIX_RATIO;
-                audioData[i * 2 + 1] *= MIX_RATIO;
-
-                if(audioData[i * 2] > 1.0)
-                    audioData[i * 2] = 1.0;
-                else if(audioData[i * 2] < -1.0)
-                    audioData[i * 2] = -1.0;
-
-                if(audioData[i * 2 + 1] > 1.0)
-                    audioData[i * 2 + 1] = 1.0;
-                else if(audioData[i * 2 + 1] < -1.0)
-                    audioData[i * 2 + 1] = -1.0;
-            } else {
-                audioData[i] *= MIX_RATIO;
-
-                if(audioData[i] > 1.0)
-                    audioData[i] = 1.0;
-                else if(audioData[i] < -1.0)
-                    audioData[i] = -1.0;
-            }
-        }
 }
 
 void OggPlayer::resetAudioData(float *audioData, int32_t numFrames, bool isStreamStereo) {
@@ -85,12 +68,15 @@ void PlayerQueue::renderStereo(float *audioData, int32_t numFrames) {
                 float left = player->data.at((int)((float) (offset + i) * pitch) * 2);
                 float right = player->data.at((int)((float) (offset + i) * pitch)  * 2 + 1);
 
-                if(pan < 0) {
-                    audioData[i * 2] += (left + right * (float) sin(abs(pan) * M_PI / 2.0)) * (float) playScale;
-                    audioData[i * 2 + 1] += right * (float) cos(abs(pan) * M_PI / 2.0) * (float) playScale;
+                if(pan == 0) {
+                    audioData[i * 2] += left * (float) playScale;
+                    audioData[i * 2 + 1] += right * (float) playScale;
+                } else if(pan < 0) {
+                    audioData[i * 2] += (left + right * fastSin(-pan * F_PI / 2)) * (float) playScale;
+                    audioData[i * 2 + 1] += right * fastCos(-pan * F_PI / 2) * (float) playScale;
                 } else {
-                    audioData[i * 2] += left * (float) cos(pan * M_PI / 2.0) * (float) playScale;
-                    audioData[i * 2 + 1] += (right + left * (float) sin(pan * M_PI / 2.0)) * (float) playScale;
+                    audioData[i * 2] += left * fastCos(pan * F_PI / 2) * (float) playScale;
+                    audioData[i * 2 + 1] += (right + left * fastSin(pan * F_PI / 2)) * (float) playScale;
                 }
             } else {
                 break;
@@ -99,12 +85,15 @@ void PlayerQueue::renderStereo(float *audioData, int32_t numFrames) {
             if((int) ((float) (offset + i) * pitch) < player->data.size()) {
                 float sample = player->data.at((int) ((float) (offset + i) * pitch));
 
-                if(pan < 0) {
-                    audioData[i * 2] += sample * (1 + (float) sin(abs(pan) * M_PI / 2.0)) * (float) playScale;
-                    audioData[i * 2 + 1] += sample * (float) cos(abs(pan) * M_PI / 2.0) * (float) playScale;
+                if(pan == 0) {
+                    audioData[i * 2] += sample * (float) playScale;
+                    audioData[i * 2] += sample * (float) playScale;
+                } else if(pan < 0) {
+                    audioData[i * 2] += sample * (1 + fastSin(-pan * F_PI / 2)) * (float) playScale;
+                    audioData[i * 2 + 1] += sample * fastCos(-pan * F_PI / 2) * (float) playScale;
                 } else {
-                    audioData[i * 2] += sample * (float) cos(pan * M_PI / 2.0) * (float) playScale;
-                    audioData[i * 2 + 1] += sample * (1 + (float) sin(pan * M_PI / 2.0)) * (float) playScale;
+                    audioData[i * 2] += sample * fastCos(pan * F_PI / 2) * (float) playScale;
+                    audioData[i * 2 + 1] += sample * (1 + fastSin(pan * F_PI / 2)) * (float) playScale;
                 }
             } else {
                 break;

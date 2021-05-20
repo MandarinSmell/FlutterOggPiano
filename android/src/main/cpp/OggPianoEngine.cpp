@@ -64,7 +64,7 @@ int OggPianoEngine::addPlayer(std::vector<float> data, bool isStereo, int sample
     return static_cast<int>(players.size()) - 1;
 }
 
-void OggPianoEngine::addQueue(int id, float pan, float pitch, int playerScale) {
+void OggPianoEngine::addQueue(int id, float pan, float pitch, float playerScale) {
     if(id >= 0 && id < players.size()) {
         players.at(id).addQueue(pan, pitch, playerScale);
     }

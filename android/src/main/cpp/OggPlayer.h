@@ -8,7 +8,10 @@
 #include <android/asset_manager.h>
 #include <vector>
 
-const static float MIX_RATIO = 0.8;
+const static float F_PI = (float) M_PI;
+const static float F_PI_2 = F_PI / 2;
+const static float B = 4/F_PI;
+const static float C = -4/(F_PI*F_PI);
 
 class OggPlayer;
 
@@ -22,11 +25,11 @@ public:
     int offset = 0;
     float pan;
     float pitch;
-    int playScale;
+    float playScale;
 
     bool queueEnded = false;
 
-    PlayerQueue(float pan, float pitch, int playScale, OggPlayer* player) {
+    PlayerQueue(float pan, float pitch, float playScale, OggPlayer* player) {
         this->pan = pan;
         this->playScale = playScale;
         this->player = player;
@@ -39,6 +42,14 @@ public:
     }
 
     void renderAudio(float* audioData, int32_t numFrames, bool isStreamStereo);
+
+    float fastSin(float degree) {
+        return B * degree + C * degree * degree;
+    }
+
+    float fastCos(float degree) {
+        return B * (degree + F_PI_2) + C * (degree + F_PI_2) * (degree + F_PI_2);
+    }
 };
 
 class OggPlayer {
@@ -59,7 +70,7 @@ public:
     void renderAudio(float* audioData, int32_t numFrames, bool reset, bool isStreamStereo);
     static void smoothAudio(float* audioData, int32_t numFrames, bool isStreamStereo);
 
-    void addQueue(float pan, float pitch, int playerScale) {
+    void addQueue(float pan, float pitch, float playerScale) {
         queues.push_back(PlayerQueue(pan, defaultPitch * pitch, playerScale, this));
     };
 

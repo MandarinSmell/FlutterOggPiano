@@ -26,276 +26,181 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4091862e-d3b3-4cdf-b654-04a8b25e46c5" name="Default Changelist" comment="change sounds back">
-      <change afterPath="$PROJECT_DIR$/android/.cxx/abi_configuration_71255t63.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/abi_configuration_71255t63.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/abi_configuration_71255t63_key.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/build_file_index.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/compile_commands.json.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/symbol_folder_index.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/build_file_index.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/compile_commands.json.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/symbol_folder_index.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/android_gradle_build_command_oggPiano_x86_64.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/android_gradle_build_stderr_oggPiano_x86_64.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/android_gradle_build_stdout_oggPiano_x86_64.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/build_file_index.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/compile_commands.json.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/SourceI24Caller.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/SourceI32Caller.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI32.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI32.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/symbol_folder_index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/abi_configuration_3u2h5te1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/abi_configuration_3u2h5te1.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/abi_configuration_3u2h5te1_key.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/abi_configuration_43r1p4qr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/abi_configuration_43r1p4qr.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/abi_configuration_43r1p4qr_key.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/abi_configuration_4l3n196w.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/abi_configuration_4l3n196w.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/abi_configuration_4l3n196w_key.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/abi_configuration_4s14e3o2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/abi_configuration_4s14e3o2.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/abi_configuration_4s14e3o2_key.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/.ninja_deps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/.ninja_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/oggPiano.dir/OggPiano.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/oggPiano.dir/OggPlayer.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/android_gradle_build_command_oggPiano_arm64-v8a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/android_gradle_build_stderr_oggPiano_arm64-v8a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/android_gradle_build_stdout_oggPiano_arm64-v8a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/aaudio/AAudioLoader.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockAdapter.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockReader.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockWriter.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/SourceI32Caller.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/fifo/FifoController.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/.ninja_deps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/.ninja_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/oggPiano.dir/OggPiano.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/oggPiano.dir/OggPlayer.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/android_gradle_build_command_oggPiano_armeabi-v7a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/android_gradle_build_stderr_oggPiano_armeabi-v7a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/android_gradle_build_stdout_oggPiano_armeabi-v7a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/aaudio/AAudioLoader.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockAdapter.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockReader.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockWriter.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/LatencyTuner.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/SourceI24Caller.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/SourceI32Caller.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/Trace.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/Utilities.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/fifo/FifoController.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerBase.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerIndirect.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/ChannelCountConverter.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/ClipToRange.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/FlowGraphNode.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/ManyToMultiConverter.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/MonoToMultiConverter.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/MultiToMonoConverter.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/RampLinear.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SampleRateConverter.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkFloat.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI16.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI24.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI32.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceFloat.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI16.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI24.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI32.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/IntegerRatio.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/LinearResampler.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/MultiChannelResampler.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResampler.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerMono.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResampler.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResamplerStereo.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/liboboe.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/CMakeFiles/oggPiano.dir/OggPiano.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockAdapter.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockReader.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/LatencyTuner.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/SourceI24Caller.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/SourceI32Caller.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/Trace.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/Utilities.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/fifo/FifoController.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerBase.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerIndirect.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/ChannelCountConverter.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/ClipToRange.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/FlowGraphNode.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/ManyToMultiConverter.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/MonoToMultiConverter.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/MultiToMonoConverter.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/RampLinear.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/SampleRateConverter.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkFloat.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI16.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI24.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI32.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceFloat.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI16.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI24.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI32.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/IntegerRatio.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/LinearResampler.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/MultiChannelResampler.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResampler.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerMono.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResampler.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResamplerStereo.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/liboboe.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/ndk_locator_record_2x6y6636.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/ndk_locator_record_2x6y6636.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.cxx/ndk_locator_record_2x6y6636_key.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/drawable-v21/launch_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/values-night/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Runner-Bridging-Header.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Classes/SwiftFlutterOggPianoPlugin.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/.ninja_deps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/.ninja_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/oggPiano.dir/OggPiano.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/oggPiano.dir/OggPlayer.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/oggPiano.dir/PitchSfhit.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/android_gradle_build_oggPiano_arm64-v8a.command.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/android_gradle_build_oggPiano_arm64-v8a.stderr.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/android_gradle_build_oggPiano_arm64-v8a.stdout.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/build_model.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/build_model.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/build_output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/cmake_server_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/cmake_server_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/compile_commands.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/json_generation_record.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/json_generation_record.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/aaudio/AAudioLoader.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockAdapter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockReader.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockWriter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/LatencyTuner.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/Trace.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/Utilities.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/fifo/FifoController.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerBase.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerIndirect.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/ChannelCountConverter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/ClipToRange.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/FlowGraphNode.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/ManyToMultiConverter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/MonoToMultiConverter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/MultiToMonoConverter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/RampLinear.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SampleRateConverter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkFloat.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI16.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI24.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceFloat.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI16.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI24.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/IntegerRatio.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/LinearResampler.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/MultiChannelResampler.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResampler.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerMono.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResampler.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResamplerStereo.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/liboboe.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/.ninja_deps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/.ninja_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/oggPiano.dir/OggPiano.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/oggPiano.dir/OggPlayer.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/oggPiano.dir/PitchSfhit.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/android_gradle_build_oggPiano_armeabi-v7a.command.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/android_gradle_build_oggPiano_armeabi-v7a.stderr.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/android_gradle_build_oggPiano_armeabi-v7a.stdout.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/build_model.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/build_model.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/build_output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/cmake_server_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/cmake_server_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/compile_commands.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/json_generation_record.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/json_generation_record.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/aaudio/AAudioLoader.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockAdapter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockReader.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockWriter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/LatencyTuner.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/Trace.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/Utilities.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/fifo/FifoController.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerBase.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerIndirect.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/ChannelCountConverter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/ClipToRange.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/FlowGraphNode.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/ManyToMultiConverter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/MonoToMultiConverter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/MultiToMonoConverter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/RampLinear.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SampleRateConverter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkFloat.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI16.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI24.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceFloat.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI16.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI24.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/IntegerRatio.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/LinearResampler.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/MultiChannelResampler.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResampler.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerMono.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResampler.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResamplerStereo.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/liboboe.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/cmake_server_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/cmake_server_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/compile_commands.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/compile_commands.json.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/compile_commands.json.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/feature_tests.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/oggPiano.dir/OggPlayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/oggPiano.dir/OggPlayer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/oggPiano.dir/PitchSfhit.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/oggPiano.dir/oggPiano.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/oggPiano.dir/oggPiano.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/android_gradle_build_oggPiano_x86_64.command.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/android_gradle_build_oggPiano_x86_64.stderr.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/android_gradle_build_oggPiano_x86_64.stdout.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/build_model.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/build_model.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/build_output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/cmake_server_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/cmake_server_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/compile_commands.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/json_generation_record.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/json_generation_record.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/aaudio/AAudioLoader.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/aaudio/AAudioLoader.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockAdapter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockAdapter.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockReader.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockReader.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockWriter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockWriter.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/LatencyTuner.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/LatencyTuner.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/Trace.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/Trace.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/Utilities.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/Utilities.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/fifo/FifoController.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/fifo/FifoController.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerBase.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerBase.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerIndirect.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerIndirect.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/ChannelCountConverter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/ChannelCountConverter.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/ClipToRange.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/ClipToRange.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/FlowGraphNode.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/FlowGraphNode.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/ManyToMultiConverter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/ManyToMultiConverter.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/MonoToMultiConverter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/MonoToMultiConverter.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/MultiToMonoConverter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/MultiToMonoConverter.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/RampLinear.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/RampLinear.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/SampleRateConverter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/SampleRateConverter.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkFloat.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkFloat.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI16.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI16.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI24.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI24.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceFloat.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceFloat.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI16.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI16.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI24.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI24.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/IntegerRatio.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/IntegerRatio.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/LinearResampler.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/LinearResampler.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/MultiChannelResampler.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/MultiChannelResampler.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResampler.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResampler.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerMono.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerMono.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResampler.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResampler.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResamplerStereo.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResamplerStereo.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/liboboe.a" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/liboboe.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/android_gradle_build_stdout_oggPiano_x86_64.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/android_gradle_build_stdout_oggPiano_x86_64.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/cpp/OggPiano.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/cpp/OggPiano.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/cpp/OggPianoEngine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/cpp/OggPianoEngine.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/cpp/OggPianoEngine.h" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/cpp/OggPianoEngine.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/cpp/oboe" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/cpp/oboe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/cpp/OggPlayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/cpp/OggPlayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/cpp/OggPlayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/cpp/OggPlayer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/mandarin/flutter_ogg_piano/FlutterOggPianoPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/mandarin/flutter_ogg_piano/FlutterOggPianoPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_ogg_piano.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_ogg_piano.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,7 +235,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
@@ -456,6 +361,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="change sounds back" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="477" y="266" key="#PSD" timestamp="1621509328201">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="477" y="266" key="#PSD/0.0.1920.1040@0.0.1920.1040" timestamp="1621509328201" />
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616573796757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.mandarin.flutter_ogg_piano
 
 import android.media.MediaCodec
@@ -15,7 +17,6 @@ import java.nio.ByteOrder
 import kotlin.math.pow
 
 /** FlutterOggPianoPlugin */
-@Suppress("DEPRECATION")
 class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
 
     private lateinit var channel: MethodChannel
@@ -29,7 +30,7 @@ class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
 
     private external fun addPlayer(data: FloatArray, isStereo: Boolean, sampleRate: Int) : Int
     private external fun initializeEngine(isStereo: Boolean, mode: Int)
-    private external fun addQueue(id: Int, pan: Float, pitch: Float, playScale: Int)
+    private external fun addQueue(id: Int, pan: Float, pitch: Float, playScale: Float)
     private external fun release()
 
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
@@ -55,6 +56,8 @@ class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
 
                 val isStereo = call.argument<Boolean>("isStereo") ?: true
                 val mode = call.argument<Int>("mode") ?: 0
+
+                Log.i("FOP", "Initializing engine with ${if(mode == 0) "LOW_LATENCY" else "POWER_SAVING"} mode")
 
                 initializeEngine(isStereo, mode)
 
@@ -140,7 +143,7 @@ class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
                     return
                 }
 
-                addQueue(id, pan.toFloat(), rate, 1)
+                addQueue(id, pan.toFloat(), rate, 1F)
 
                 result.success("Succeeded to play index $index with pitch $note")
             }
@@ -186,7 +189,7 @@ class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
                                 pan = 1.0
                         }
 
-                        addQueue(id, pan.toFloat(), rate, note[2].toInt())
+                        addQueue(id, pan.toFloat(), rate, note[2].toFloat())
                     }
                 }
 

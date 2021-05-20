@@ -41,7 +41,7 @@ public:
 
     int addPlayer(std::vector<float> data, bool isStereo, int sampleRate);
 
-    void addQueue(int id, float pan, float pitch, int playerScale);
+    void addQueue(int id, float pan, float pitch, float playerScale);
 };
 
 

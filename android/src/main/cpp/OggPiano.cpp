@@ -32,7 +32,7 @@ extern "C" jint Java_com_mandarin_flutter_1ogg_1piano_FlutterOggPianoPlugin_addP
     return engine.addPlayer(*vectorData, isStereo, sampleRate);
 }
 
-extern "C" void Java_com_mandarin_flutter_1ogg_1piano_FlutterOggPianoPlugin_addQueue(JNIEnv *env, jobject instance, jint id, jfloat pan, jfloat pitch, jint playerScale) {
+extern "C" void Java_com_mandarin_flutter_1ogg_1piano_FlutterOggPianoPlugin_addQueue(JNIEnv *env, jobject instance, jint id, jfloat pan, jfloat pitch, jfloat playerScale) {
     engine.addQueue(id, pan, pitch, playerScale);
 }
 

@@ -1,30 +1,9 @@
 ninja: Entering directory `C:\Users\user\AndroidStudioProjects\flutter_ogg_piano\android\.cxx\cmake\debug\x86_64'
-[1/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI24.cpp.o
-[2/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI16.cpp.o
-[3/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SampleRateConverter.cpp.o
-[4/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceFloat.cpp.o
-[5/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/RampLinear.cpp.o
-[6/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI32.cpp.o
-[7/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp.o
-[8/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResampler.cpp.o
-[9/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/IntegerRatio.cpp.o
-[10/29] Building CXX object CMakeFiles/oggPiano.dir/OggPiano.cpp.o
-[11/29] Building CXX object CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o
-[12/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerMono.cpp.o
-[13/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/LinearResampler.cpp.o
-[14/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI32.cpp.o
-[15/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResampler.cpp.o
-[16/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/MultiChannelResampler.cpp.o
-[17/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResamplerStereo.cpp.o
-[18/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o
-[19/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/Trace.cpp.o
-[20/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o
-[21/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o
-[22/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o
-[23/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o
-[24/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o
-[25/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o
-[26/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o
-[27/29] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o
-[28/29] Linking CXX static library oboe\liboboe.a
-[29/29] Linking CXX shared library C:\Users\user\AndroidStudioProjects\flutter_ogg_piano\example\build\flutter_ogg_piano\intermediates\cmake\debug\obj\x86_64\liboggPiano.so
+[1/4] Building CXX object CMakeFiles/oggPiano.dir/OggPlayer.cpp.o
+[2/4] Building CXX object CMakeFiles/oggPiano.dir/OggPiano.cpp.o
+[3/4] Building CXX object CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o
+C:/Users/user/AndroidStudioProjects/flutter_ogg_piano/android/src/main/cpp/OggPianoEngine.cpp:101:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+[4/4] Linking CXX shared library C:\Users\user\AndroidStudioProjects\flutter_ogg_piano\example\build\flutter_ogg_piano\intermediates\cmake\debug\obj\x86_64\liboggPiano.so
