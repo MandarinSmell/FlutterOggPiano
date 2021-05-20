@@ -87,7 +87,7 @@ void PlayerQueue::renderStereo(float *audioData, int32_t numFrames) {
 
                 if(pan == 0) {
                     audioData[i * 2] += sample * (float) playScale;
-                    audioData[i * 2] += sample * (float) playScale;
+                    audioData[i * 2 + 1] += sample * (float) playScale;
                 } else if(pan < 0) {
                     audioData[i * 2] += sample * (1 + fastSin(-pan * F_PI / 2)) * (float) playScale;
                     audioData[i * 2 + 1] += sample * fastCos(-pan * F_PI / 2) * (float) playScale;

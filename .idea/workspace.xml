@@ -25,19 +25,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4091862e-d3b3-4cdf-b654-04a8b25e46c5" name="Default Changelist" comment="prepare 1.1.0">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/oggPiano.dir/OggPlayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/oggPiano.dir/OggPlayer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/oggPiano.dir/oggPiano.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/oggPiano.dir/oggPiano.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/android_gradle_build_stdout_oggPiano_x86_64.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/android_gradle_build_stdout_oggPiano_x86_64.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/liboboe.a" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/oboe/liboboe.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/cpp/OggPianoEngine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/cpp/OggPianoEngine.cpp" afterDir="false" />
+    <list default="true" id="4091862e-d3b3-4cdf-b654-04a8b25e46c5" name="Default Changelist" comment="1.1.1">
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621518620064</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="1.1.1">
+      <created>1621521106356</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1621521106356</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,7 +199,8 @@
     <MESSAGE value="1.0.6" />
     <MESSAGE value="change sounds back" />
     <MESSAGE value="prepare 1.1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="prepare 1.1.0" />
+    <MESSAGE value="1.1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.1.1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="477" y="266" key="#PSD" timestamp="1621509328201">
@@ -250,10 +247,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1620894804190" />
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1621518621863">
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1621521107364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1621518621863" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1621521107364" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1616514403757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
