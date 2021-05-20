@@ -43,6 +43,12 @@ void OggPianoEngine::release() {
     stream.reset();
     isStreamOpened = false;
     deviceSampleRate = -1;
+
+    for(auto & player : players) {
+        player.release();
+    }
+
+    std::vector<OggPlayer>().swap(players);
 }
 
 DataCallbackResult
