@@ -59,6 +59,7 @@ public:
 
     int offset = 0;
     bool isStereo;
+    bool isReleased = false;
     float defaultPitch = 1.0;
 
     OggPlayer(std::vector<float> data, bool isStereo, int fileSampleRate, int deviceSampleRate) {
@@ -71,10 +72,16 @@ public:
     static void smoothAudio(float* audioData, int32_t numFrames, bool isStreamStereo);
 
     void addQueue(float pan, float pitch, float playerScale) {
+        if(isReleased)
+            return;
+
+
         queues.push_back(PlayerQueue(pan, defaultPitch * pitch, playerScale, this));
     };
 
     static void resetAudioData(float* audioData, int32_t numFrames, bool isStreamStereo);
+
+    void release();
 
     std::vector<float> data;
 };

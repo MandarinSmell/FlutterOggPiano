@@ -18,7 +18,7 @@ extern "C" void Java_com_mandarin_flutter_1ogg_1piano_FlutterOggPianoPlugin_init
     engine.start(isStereo, mode == 0 ? LOW_LATENCY : POWER_SAVING);
 }
 
-extern "C" jint Java_com_mandarin_flutter_1ogg_1piano_FlutterOggPianoPlugin_addPlayer(JNIEnv *env, jobject instance, jfloatArray data, jboolean isStereo, jint sampleRate) {
+extern "C" jint Java_com_mandarin_flutter_1ogg_1piano_FlutterOggPianoPlugin_addPlayer(JNIEnv *env, jobject instance, jfloatArray data, jint index, jboolean forceLoad, jboolean isStereo, jint sampleRate) {
     int size = env -> GetArrayLength(data);
 
     auto* parse = (jfloat*) (env -> GetFloatArrayElements(data, nullptr));
@@ -29,7 +29,7 @@ extern "C" jint Java_com_mandarin_flutter_1ogg_1piano_FlutterOggPianoPlugin_addP
         vectorData -> push_back(parse[i]);
     }
 
-    return engine.addPlayer(*vectorData, isStereo, sampleRate);
+    return engine.addPlayer(*vectorData, index, forceLoad, isStereo, sampleRate);
 }
 
 extern "C" void Java_com_mandarin_flutter_1ogg_1piano_FlutterOggPianoPlugin_addQueue(JNIEnv *env, jobject instance, jint id, jfloat pan, jfloat pitch, jfloat playerScale) {

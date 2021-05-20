@@ -47,7 +47,7 @@ class FlutterOggPiano {
 
   /// Initialize sound system<br>
   /// You can enable mono mode by setting [isStereo] as false. [isStereo] is true as default
-  /// [mode] decides performance of audio handler. If [mode] is [LOW_LATENCY], it can render audio fast, but audio will start stutter if there are too many sounds to be rendered<br>
+  /// [mode] decides performance of audio handler. If [mode] is [LOW_LATENCY], it can render audio fast, but audio will start stutter if there are too many sounds to be rendered<br><br>
   /// If [mode] is [POWER_SAVING], it can render audio more fluently, but it may require higher performance than [LOW_LATENCY] mode
   Future<void> init({bool isStereo = true, MODE mode = MODE.LOW_LATENCY}) async {
     await _channel.invokeMethod("init", {"isStereo" : isStereo, "mode" : mode == MODE.LOW_LATENCY ? 0 : 1});
@@ -67,9 +67,10 @@ class FlutterOggPiano {
   }
 
   /// Plays multiple sounds at the same time, this method is for reducing delays in each sounds
-  /// [data] must contain 3 length integer list. Each value in list represents {note, pan, number of notes}
+  /// [data] must contain 3 length integer list. Each value in list represents {note, pan, number of notes (can be decimal)}
   /// For example, if 1 pitched note will be played 10 times in single session with panned to right, data must be {1, 1, 10}
-  /// Keys in [data] must contain id of each sound.
+  /// Keys in [data] must contain id of each sound.<br><br>
+  /// Be aware that if number of notes are too large, it may lead to awful sound
   Future<void> playInGroup(Map<int, List<Float64List>> data) async {
     await _channel.invokeMethod("playInGroup", {"data" : data});
   }

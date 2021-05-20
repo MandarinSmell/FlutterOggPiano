@@ -138,3 +138,8 @@ void PlayerQueue::renderMono(float *audioData, int32_t numFrames) {
         offset = 0;
     }
 }
+
+void OggPlayer::release() {
+    std::vector<float>().swap(data);
+    std::vector<PlayerQueue>().swap(queues);
+}

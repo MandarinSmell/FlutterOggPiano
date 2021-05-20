@@ -39,7 +39,7 @@ public:
     std::shared_ptr<AudioStream> stream;
     std::vector<OggPlayer> players = std::vector<OggPlayer>();
 
-    int addPlayer(std::vector<float> data, bool isStereo, int sampleRate);
+    int addPlayer(std::vector<float> data, int index, bool forceLoad, bool isStereo, int sampleRate);
 
     void addQueue(int id, float pan, float pitch, float playerScale);
 };

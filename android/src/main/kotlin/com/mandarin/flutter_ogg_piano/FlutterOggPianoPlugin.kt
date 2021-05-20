@@ -28,7 +28,7 @@ class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
         System.loadLibrary("oggPiano")
     }
 
-    private external fun addPlayer(data: FloatArray, isStereo: Boolean, sampleRate: Int) : Int
+    private external fun addPlayer(data: FloatArray, index: Int, forceLoad: Boolean, isStereo: Boolean, sampleRate: Int) : Int
     private external fun initializeEngine(isStereo: Boolean, mode: Int)
     private external fun addQueue(id: Int, pan: Float, pitch: Float, playScale: Float)
     private external fun release()
@@ -88,7 +88,7 @@ class FlutterOggPianoPlugin : FlutterPlugin, MethodCallHandler {
                 if(reader.canDo) {
                     val resArray = reader.getPCM(MediaCodec.BufferInfo()).toByteArray()
 
-                    val id = addPlayer(toFloatArray(resArray), reader.isStereo, reader.sampleRate)
+                    val id = addPlayer(toFloatArray(resArray), index, force, reader.isStereo, reader.sampleRate)
 
                     ids[index] = id
 
