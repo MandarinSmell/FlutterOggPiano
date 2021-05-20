@@ -1,3 +1,7 @@
+## 1.1.0
+
+* Implemented [Oboe Library](https://github.com/google/oboe) for better audio rendering performance
+
 ## 1.0.6
 
 * Performed playing multiple sound in group (In one method)

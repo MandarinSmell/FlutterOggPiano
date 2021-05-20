@@ -9,7 +9,7 @@ Put sound and adjust pitching with Android internal codes in Flutter
 To implement this plugin in Flutter, add this line in dependencies section in pubspec.yaml
 
 ```yaml
-flutter_ogg_piano : ^1.0.4
+flutter_ogg_piano : ^1.1.0
 ```
 
 ### Example
@@ -18,13 +18,28 @@ Before you using this FlutterOggPiano class, you always have to call init method
 There is maximum number of sounds which can be played for Android, default is 128 and you can change this value
 Be aware that this plugin can't hold sound longer than 5 seconds duration.
 
+Since FlutterOggPiano 1.1.0, this plugin uses [Oboe Library](https://github.com/google/oboe) in Android,
+you can set performance mode : LOW_LATENCY, POWER_SAVING.
+
+LOW_LATENCY mode can perform the least latency when rendering audio.
+However, be aware that playing too much sounds at the same time will make rendering process not able to be done properly, leading to bad sound experience.
+POWER_SAVING on the other hand, requires some higher performance than LOW_LATENCY mode, but it can handle more amount of sounds simultaneously.
+This plugin uses LOW_LATENCY mode as default for better audio rendering time, but you can change mode by calling init() method.
+
+You can also decide whether audio will be rendered with stereo mode or not. In init() method, if *isStereo* argument is false, it will render all audio as mono.
+This will affect device's speaker as well. If you turn on mono mode, even though speaker has 2 channels, it will play any sounds as if speaker has only one channel.
+
+If you can be aware of memory usage, you can allow users to load any sounds unlike [SoundPool](https://developer.android.com/reference/android/media/SoundPool) in android.
+
 ```dart
 FlutterOggPiano fop = FlutterOggPiano();
 
 //In somewhere of codes...
 fop.init();
-//With maximum number of sounds
-fop.init(max: 64);
+//Decide performance mode
+fop.init(mode: MODE.POWER_SAVING);
+//If you want to play sound with mono
+fop.ini(isStereo: false);
 ```
 
 This example shows how you use FlutterOggPiano with sounds file saved in assets folder.
@@ -77,6 +92,16 @@ If left/right isn't specified, default value is 1.0
 fop.play(index: 1, note: -1, left: 0.5, right: 0.75)
 ```
 
+Since version 1.1.0, we don't use left/right volume value. Instead, we use pan value only.
+pan value can be decimal, but it must be ranged from -1.0 to 1.0.
+-1.0 means panned to left, and 1.0 means panned to right. 0.0 means panned to center.
+If pan value isn't specified, value is 0.0 as default
+
+```dart
+//Somewhere of codes...
+fop.play(index: 1, note: 3, pan: 1.0);
+```
+
 Since version 1.0.6, you can now send multiple sound data which will be played
 But this has some restriction, you have to pass Map<int, double[]>
 Each key will be ID, and double[] contains [pitch, left_volume, right_volume]
@@ -92,6 +117,34 @@ for(int i = 0; i < _number; i++) {
   list[0] = _pitch;
   list[1] = _left;
   list[2] = _right;
+  
+  sounds.add(list);
+}
+
+map[id] = sounds;
+
+fop.playInGroup(map);
+```
+
+Since version 1.1.0, playInGroup() method's parameter got changed a little bit.
+Due to removal of left/right volume value, double[] must contain pan value.
+And since Oboe can perform small latency for playing sounds, developers can play same sound multiple times in one session.
+So double[] will require 3 data still, but now, it will be [pitch, pan, scale]
+
+Be aware that if scale value is too large, users will get awful broken sound due to clipping, so adjust this value properly.
+pan value has to be ranged from -1.0 to 1.0 still.
+
+```dart
+Map<int, List<Float64List>> map = Map();
+
+List<Float64List> sounds = [];
+
+for(int i = 0; i < _number; i++) {
+  Float64List list = Float64List(3);
+
+  list[0] = _pitch;
+  list[1] = _pan;
+  list[2] = _scale;
   
   sounds.add(list);
 }
