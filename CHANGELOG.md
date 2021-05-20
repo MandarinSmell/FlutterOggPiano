@@ -1,3 +1,7 @@
+## 1.1.1
+
+* Fixed sound loading crash
+
 ## 1.1.0
 
 * Implemented [Oboe Library](https://github.com/google/oboe) for better audio rendering performance
