@@ -25,14 +25,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4091862e-d3b3-4cdf-b654-04a8b25e46c5" name="Default Changelist" comment="change sounds back">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="4091862e-d3b3-4cdf-b654-04a8b25e46c5" name="Default Changelist" comment="prepare 1.1.0" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620292581960</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="prepare 1.1.0">
+      <created>1621518620064</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1621518620064</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,7 +189,8 @@
     <MESSAGE value="perform playing multiple sounds in one method" />
     <MESSAGE value="1.0.6" />
     <MESSAGE value="change sounds back" />
-    <option name="LAST_COMMIT_MESSAGE" value="change sounds back" />
+    <MESSAGE value="prepare 1.1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="prepare 1.1.0" />
   </component>
   <component name="WindowStateProjectService">
     <state x="477" y="266" key="#PSD" timestamp="1621509328201">
@@ -236,10 +237,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1620894804190" />
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1620292583285">
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1621518621863">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1620292583285" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1621518621863" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1616514403757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

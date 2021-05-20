@@ -61,7 +61,7 @@ OggPianoEngine::onAudioReady(AudioStream *audioStream, void *audioData, int32_t 
 }
 
 int OggPianoEngine::addPlayer(std::vector<float> data, int index, bool forceLoad, bool isStereo, int sampleRate) {
-    if(index >= data.size()) {
+    if(index >= players.size()) {
         if(deviceSampleRate != -1) {
             players.emplace_back(std::move(data), isStereo, sampleRate, deviceSampleRate);
         } else {
@@ -79,7 +79,11 @@ int OggPianoEngine::addPlayer(std::vector<float> data, int index, bool forceLoad
         }
     }
 
-    return (int) players.size() - 1;
+    if(index >= players.size()) {
+        return (int) players.size() - 1;
+    } else {
+        return index;
+    }
 }
 
 void OggPianoEngine::addQueue(int id, float pan, float pitch, float playerScale) {
