@@ -63,10 +63,13 @@ void PlayerQueue::renderAudio(float * audioData, int32_t numFrames, bool isStrea
 
 void PlayerQueue::renderStereo(float *audioData, int32_t numFrames) {
     for(int i = 0; i < numFrames; i++) {
+        float real = (float) (offset + i) * pitch;
+        int index = (int) real;
+
         if(player->isStereo) {
-            if((int) ((float) (offset + i) * pitch) * 2 + 1 < player->data.size()) {
-                float left = player->data.at((int)((float) (offset + i) * pitch) * 2);
-                float right = player->data.at((int)((float) (offset + i) * pitch)  * 2 + 1);
+            if(index * 2 + 3 < player->data.size()) {
+                float left = player->data.at(index * 2) + (real - (float) index) * (player->data.at((index + 1) * 2) - player->data.at(index * 2));
+                float right = player->data.at(index  * 2 + 1) + (real - (float) index) * (player->data.at((index + 1) * 2 + 1) - player->data.at(index * 2 + 1));
 
                 if(pan == 0) {
                     audioData[i * 2] += left * (float) playScale;
@@ -82,8 +85,8 @@ void PlayerQueue::renderStereo(float *audioData, int32_t numFrames) {
                 break;
             }
         } else {
-            if((int) ((float) (offset + i) * pitch) < player->data.size()) {
-                float sample = player->data.at((int) ((float) (offset + i) * pitch));
+            if(index + 1 < player->data.size()) {
+                float sample = player->data.at(index) + (real - (float) index) * (player->data.at(index + 1) - player->data.at(index));
 
                 if(pan == 0) {
                     audioData[i * 2] += sample * (float) playScale;
@@ -111,15 +114,21 @@ void PlayerQueue::renderStereo(float *audioData, int32_t numFrames) {
 
 void PlayerQueue::renderMono(float *audioData, int32_t numFrames) {
     for(int i = 0; i < numFrames; i++) {
+        float real = (float) (offset +i) * pitch;
+        int index = (int) real;
+
         if(player->isStereo) {
-            if((int) ((float) (offset + i) * pitch) * 2 + 1 < player->data.size()) {
-                audioData[i] += (player->data.at((int) ((float) (offset + i) * pitch) * 2) + player->data.at((int) ((float) (offset + i) * pitch) * 2 + 1)) / 2 * (float) playScale;
+            if(index * 2 + 3 < player->data.size()) {
+                audioData[i] += (player->data.at(index * 2) + player->data.at(index * 2 + 1) +
+                        (real - (float) index) * (player->data.at((index + 1) * 2) -
+                        player->data.at(index * 2) + player->data.at((index + 1) * 2 + 1) -
+                        player->data.at(index * 2 + 1))) / 2 * (float) playScale;
             } else {
                 break;
             }
         } else {
-            if((int) ((float) (offset + i) * pitch) < player->data.size()) {
-                audioData[i] += player->data.at((int) ((float) (offset + i) * pitch)) * (float) playScale;
+            if(index + 1 < player->data.size()) {
+                audioData[i] += (player->data.at(index) + (real - (float) index) * (player->data.at(index + 1) - player->data.at(index))) * (float) playScale;
             } else {
                 break;
             }

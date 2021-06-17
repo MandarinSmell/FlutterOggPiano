@@ -1,3 +1,3 @@
 ninja: Entering directory `C:\Users\user\AndroidStudioProjects\flutter_ogg_piano\android\.cxx\cmake\debug\x86_64'
-[1/2] Building CXX object CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o
+[1/2] Building CXX object CMakeFiles/oggPiano.dir/OggPlayer.cpp.o
 [2/2] Linking CXX shared library C:\Users\user\AndroidStudioProjects\flutter_ogg_piano\example\build\flutter_ogg_piano\intermediates\cmake\debug\obj\x86_64\liboggPiano.so
