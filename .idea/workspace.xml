@@ -26,52 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4091862e-d3b3-4cdf-b654-04a8b25e46c5" name="Default Changelist" comment="1.1.2">
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/CMakeFiles/oggPiano.dir/OggPianoEngine.cpp-a364bf93.o.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp-124d37d7.o.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp-7a6e8ec3.o.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp-e5090eda.o.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp-21c4cf80.o.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp-d6179ac7.o.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp-1088056a.o.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp-a9578075.o.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/SourceI24Caller.cpp-bc82a028.o.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/SourceI32Caller.cpp-4eb1ad48.o.tmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/oggPiano.dir/OggPiano.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/oggPiano.dir/OggPiano.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/oggPiano.dir/OggPlayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/oggPiano.dir/OggPlayer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/android_gradle_build_stdout_oggPiano_arm64-v8a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/android_gradle_build_stdout_oggPiano_arm64-v8a.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/liboboe.a" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/arm64-v8a/oboe/liboboe.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/oggPiano.dir/OggPiano.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/oggPiano.dir/OggPiano.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/oggPiano.dir/OggPlayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/oggPiano.dir/OggPlayer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/android_gradle_build_stdout_oggPiano_armeabi-v7a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/android_gradle_build_stdout_oggPiano_armeabi-v7a.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/liboboe.a" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/armeabi-v7a/oboe/liboboe.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/CMakeFiles/oggPiano.dir/OggPiano.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/CMakeFiles/oggPiano.dir/OggPiano.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/CMakeFiles/oggPiano.dir/OggPianoEngine.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/CMakeFiles/oggPiano.dir/OggPlayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/CMakeFiles/oggPiano.dir/OggPlayer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/android_gradle_build_stdout_oggPiano_x86.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/android_gradle_build_stdout_oggPiano_x86.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/liboboe.a" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86/oboe/liboboe.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/oggPiano.dir/OggPlayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/CMakeFiles/oggPiano.dir/OggPlayer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/android_gradle_build_stdout_oggPiano_x86_64.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/.cxx/cmake/debug/x86_64/android_gradle_build_stdout_oggPiano_x86_64.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/cpp/OggPlayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/cpp/OggPlayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
